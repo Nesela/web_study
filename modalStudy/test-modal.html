@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="login-button">로그인 하기</button>
+    <!-- 로그인 -->
+    <div id="loginModal" class="modal"> <!-- 반투명 배경 -->
+        <div class="modal-content"> <!-- 팝업박스 -->
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="text" placeholder="ID">
+            <input type="password" placeholder="PASSWORD">
+
+            <div class="button-group">
+                <button>로그인</button>
+                <button id="goRegister">회원가입</button>
+            </div>
+        </div>
+
+        <!-- 회원가입 -->
+        <div id="registerModal" class="regmodal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <input type="text" placeholder="New ID">
+            <input type="password" placeholder="New PASSWORD">
+            <input type="password" placeholder="Confirm PASSWORD">
+
+            <div class="button-group">
+                <button>회원가입</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="moadl.js"></script>
+</body>
+
+</html>
