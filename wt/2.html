@@ -1,0 +1,40 @@
+<!DOCTYPE html>    <!--타입 html 기본정리-->
+<html>              
+<head>          <!-- 헤더에 제목, 스타일시트 링크, 스크립트 파일링크, 메타데이터 등을 포함시키기--> <!--검색엔진 노출에 영향이 있음★-->
+    <title>WEb - CSS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+     <!-- style 태그를 이용하여 꾸밈 효과 가능 -->
+      <!-- 클래스를 선택하기위해선 앞에 . 을 추가 (변수랑은 다른듯..?)--> <!-- 클래스 선택자보단 id 선택자가 더우선시됨 id를 선택하기위해선 # 선택-->
+       <!-- 선택자의 우선순위는 태그-> 클래스-> 아이디--> <!-- 아이디는 하나만 사용가능 중복값은 불가능-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="darkbutton.js"></script>
+</head>
+ 
+<body>
+    <input type="button" value="다크모드" onclick="
+    darkbutton(this);
+    ">
+        <h1><a href="index.html">WEB</a></h1>
+        
+        <div id="grid">
+    <ol>
+        <li><a href="index.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
+
+    <div id="article">
+        <h2>CSS</h2>  <!--_blank = 새창에서 페이지 열기,  title = 파이퍼링크의 툴팁으로 간단소개 -->
+        <p>
+        Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.
+        [1] Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, 
+        the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, 
+        or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, 
+        user interfaces for web applications, and user interfaces for many mobile applications.
+        </p>
+    </div>
+</div>
+</body>
+</html>
+
